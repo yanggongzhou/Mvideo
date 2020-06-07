@@ -1,0 +1,81 @@
+*{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB",Arial,sans-serif;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*在css中排除掉这两种元素*/
+input, textarea {
+  user-select: text;
+}
+body, p, h1,h5,ul ,li{
+  margin: 0;
+  padding: 0
+}
+ul{  list-style:none;  }
+a{
+  text-decoration:none;
+  cursor: pointer;
+}
+.left{
+  float:left;
+}
+.right{
+  float: right;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+/*数字输入框去除上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+.vedio_Clo{
+  margin-bottom: 0.6rem;
+  overflow: hidden;
+}
+.video_name{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.video_img{
+  width: 100%;
+}
+.img_div{
+  position: relative;
+  text-align: center;
+}
+.nor_div{
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.playicon{
+  width: 15%;
+  position: absolute;
+  left: 12%;
+  bottom: 30%;
+}
+.playicon2{
+  position: absolute;
+  width: 3rem;
+  position: absolute;
+  left: 10%;
+  bottom: 16%;
+}
