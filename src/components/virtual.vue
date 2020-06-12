@@ -6,7 +6,7 @@
           <div
             class="img_div" @click.stop="playerCard(val)">
             <div class="nor_div" :style="'height:'+ VvideoHeight">
-              <img :src="val.img"
+              <img v-lazy="val.img"
                    class='video_img vertical_video'
                    alt=""/>
               <img class="playicon2" src="../assets/fiona/play.png" alt="">
@@ -21,7 +21,7 @@
         <Card style="overflow: hidden" :padding="0">
           <div
             class="img_div" @click.stop="playerCard(val,ind)">
-            <img :src="val.img"
+            <img v-lazy="val.img"
                  class='video_img h_video'
                  :style="'height:'+ HvideoHeight"
                  alt=""/>
@@ -62,8 +62,10 @@
           // },
           {
             name:'我是不白吃抖音直播',
-            img:'https://images.magicscorp.com/Mimg/vertical/v19.png',
-            url:'https://videos.magicscorp.com/Mvideo/vertical/19v.mp4'
+            img: 'https://large.magics-ad.com/my-website/character/bbc02.png',
+            url:'https://large.magics-ad.com/my-website/character/bbc02.mp4'
+            // img:'https://images.magicscorp.com/Mimg/vertical/v19.png',
+            // url:'https://videos.magicscorp.com/Mvideo/vertical/19v.mp4'
           },
           // {
           //   name:'火火抖音直播01',

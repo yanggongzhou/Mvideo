@@ -5,7 +5,7 @@
         <Card style="overflow: hidden" :padding="0">
           <div
             class="img_div" @click.stop="playerCard(val,ind)">
-            <img :src="val.img"
+            <img v-lazy="val.img"
                  class='video_img h_video'
                  :style="'height:'+ HvideoHeight"
                  alt=""/>
@@ -21,7 +21,7 @@
           <div
             class="img_div" @click.stop="playerCard(val)">
             <div class="nor_div" :style="'height:'+ VvideoHeight">
-              <img :src="val.img"
+              <img v-lazy="val.img"
                    class='video_img vertical_video'
                    alt=""/>
               <img class="playicon2" src="../assets/fiona/play.png" alt="">

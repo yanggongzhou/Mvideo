@@ -23,6 +23,13 @@ Vue.component("Col",Col)
 Vue.component("Menu",Menu)
 Vue.component("MenuItem",MenuItem)
 
+import VueLazyLoad from 'vue-lazyload'
+Vue.use(VueLazyLoad,{
+  preLoad: 1.3,
+  error:'./static/error.png',
+  loading:'./static/loading.png',
+  attempt: 1
+})
 // Vue.use(ViewUI, { locale });
 Vue.config.productionTip = false
 
